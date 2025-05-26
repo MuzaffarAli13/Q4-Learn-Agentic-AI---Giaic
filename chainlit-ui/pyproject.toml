@@ -1,0 +1,21 @@
+[project]
+name = "chainlit-ui"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muzaffar Ali", email = "muzafark834@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chainlit>=2.5.5",
+]
+
+[project.scripts]
+chainlit-ui = "chainlit_ui:main"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
