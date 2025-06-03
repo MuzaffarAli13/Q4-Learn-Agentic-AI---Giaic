@@ -9,13 +9,14 @@ set_tracing_disabled(True)
 
 provider = AsyncOpenAI(
     api_key=os.getenv("GEMINI_API_KEY"),
+    
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
-
 model = OpenAIChatCompletionsModel(
     model="gemini-2.0-flash-exp",
     openai_client=provider,
 )
+
 
 async def myAgent(user_input):
     Agent1 = Agent(
